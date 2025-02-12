@@ -11,23 +11,29 @@ public class CustomArrayList<T> implements CustomList<T> {
 	@Override
 	public boolean add(T item) {
 	if(size == items.length) {
-		items=Arrays.copyOf(items, items.length * 2);
+		resize();
 	}
 		items[size] = item;
 		size++;
 		return true;
 		
 	}
-	
+
 	@Override
-	public boolean add(int index, T item) throws IndexOutOfBoundsException{
-	if(size == items.length) {
-		items=Arrays.copyOf(items, items.length * 2);
-	}
-		items[size] = item;
+	public boolean add(int index, T item) throws IndexOutOfBoundsException {
+		if (index < 0 || index > size) {
+			throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+		}
+		if (size == items.length) {
+			resize();
+		}
+
+		for (int i = size; i > index; i--) {
+			items[i] = items[i - 1];
+		}
+		items[index] = item;
 		size++;
 		return true;
-		
 	}
 
 	@Override
@@ -40,7 +46,7 @@ public class CustomArrayList<T> implements CustomList<T> {
 	
 	@Override
 	public T get(int index) {
-		if (index >= size) {
+		if (index <0 || index >= size) {
 			throw new IndexOutOfBoundsException("Index: "+ index+ ", Size: "+size);
 		} return(T) items[index];
 		}
@@ -59,6 +65,11 @@ public class CustomArrayList<T> implements CustomList<T> {
 		size--;
 		return item;
 		
+	}
+	private void resize() {
+		Object[] newArray=new Object[items.length*2];
+		System.arraycopy(items, 0, newArray, 0, items.length);
+		items=newArray;
 	}
 }
 

@@ -7,6 +7,8 @@ public class CustomListApplication {
 		CustomList<String> list = new CustomArrayList<>();
 		 for(int i=1; i<=40; i++) {
 			 list.add("element" + i);
+
+
 		 }
 		
 		
