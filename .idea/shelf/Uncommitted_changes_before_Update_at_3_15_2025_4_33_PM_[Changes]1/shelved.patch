@@ -1,0 +1,49 @@
+Index: tim-assignment7/.project
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tim-assignment7/.project b/tim-assignment7/.project
+deleted file mode 100644
+--- a/tim-assignment7/.project	(revision d8e4aefc0ad108e6129fdb42f4acd037141030ba)
++++ /dev/null	(revision d8e4aefc0ad108e6129fdb42f4acd037141030ba)
+@@ -1,17 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<projectDescription>
+-	<name>tim-assignment7</name>
+-	<comment></comment>
+-	<projects>
+-	</projects>
+-	<buildSpec>
+-		<buildCommand>
+-			<name>org.eclipse.jdt.core.javabuilder</name>
+-			<arguments>
+-			</arguments>
+-		</buildCommand>
+-	</buildSpec>
+-	<natures>
+-		<nature>org.eclipse.jdt.core.javanature</nature>
+-	</natures>
+-</projectDescription>
+Index: tim-assignment7/.classpath
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tim-assignment7/.classpath b/tim-assignment7/.classpath
+deleted file mode 100644
+--- a/tim-assignment7/.classpath	(revision d8e4aefc0ad108e6129fdb42f4acd037141030ba)
++++ /dev/null	(revision d8e4aefc0ad108e6129fdb42f4acd037141030ba)
+@@ -1,12 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<classpath>
+-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+-		<attributes>
+-			<attribute name="module" value="true"/>
+-		</attributes>
+-	</classpathentry>
+-	<classpathentry kind="src" path="src"/>
+-	<classpathentry kind="src" path="test"/>
+-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+-	<classpathentry kind="output" path="bin"/>
+-</classpath>
